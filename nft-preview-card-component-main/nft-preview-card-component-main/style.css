@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+    --main-bg-color: hsl(217, 54%, 11%);
+    --card-bg-color: hsl(216, 50%, 16%);
+    --line:  hsl(215, 32%, 27%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body{
+    background-color: var(--main-bg-color);
+    font-family: "Outfit", "sans-serif";
+    align-items: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+.container{
+    background-color: var(--card-bg-color);
+    padding: 1.25rem;
+    border-radius:0.625 ;
+    margin-bottom: 2rem;
+    box-shadow: 50%;
+}
+
+
+.container h2{
+    color: var(--white);
+    margin-bottom: 1rem ;
+}
+
+.container p{
+    color: var(--soft-blue);
+   
+}
+
+@media(min-width: 400px){
+    .container{
+       width: 400px;
+    }
+}
+
+img{
+    max-width: 100%;
+}
+
+.container ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.container ul li:first-child{
+    color: var(--cyan);
+}
+
+.container ul li:last-child{
+    color: var(--soft-blue);
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 2rem;
+}
+
+.avatar img {
+    width: 3.5rem;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    margin-right: 3 rem;
+}
+
+.avatar p span{
+    font-size: 18px;
+    text-align: center;
+    color: var(--white);
+}
